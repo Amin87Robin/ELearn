@@ -33,7 +33,7 @@ namespace ELearn.Core.Services
 
          public async Task<bool> DeleteEpisode(int id)
         {
-            var episode = await GetEpisodeById(id);
+            var episode = await GetEpisode(id);
             if (episode == null)
             {
                 throw new Exception("This Course Not Found !");
